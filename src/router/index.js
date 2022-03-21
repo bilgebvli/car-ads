@@ -1,9 +1,9 @@
 import Vue from 'vue';
+import i18n from '@/locales';
 import VueRouter from 'vue-router';
+import routes from './routes';
 
 Vue.use(VueRouter);
-
-const routes = [];
 
 const router = new VueRouter({
   mode: 'history',
@@ -11,4 +11,11 @@ const router = new VueRouter({
   routes,
 });
 
+//Set Page Title
+router.afterEach((to) => {
+  setTimeout(() => {
+    const { pageTitle } = to.meta;
+    document.title = `${i18n.t(pageTitle)} | ${process.env.VUE_APP_TITLE}`;
+  }, 250);
+});
 export default router;
