@@ -1,8 +1,37 @@
 {
- "advertDetail": {
-  "continue": "Devam Et"
- },
- "errors": {
-  "pageNotFound": "Sayfa Bulunamadı"
- }
+  "adverts": {
+    "detail": {
+      "continue": "Devam Et",
+      "description": "Açıklama",
+      "name": "İlan Detayı",
+      "properties": {
+        "color": "Renk",
+        "fuel": "Yakıt Tipi",
+        "gear": "Vites Tipi",
+        "km": "Kilometre",
+        "year": "Yıl"
+      },
+      "sellerContactInformation": "Satıcı İletişim Bilgileri",
+      "userInfo": {
+        "nameSurname": "Adı Soyadı",
+        "phone": "Telefon"
+      }
+    },
+    "name": "İlanlar",
+    "sortItems": {
+      "date": "Tarih",
+      "price": "Fiyat",
+      "year": "Yıl"
+    }
+  },
+  "errors": {
+    "pageNotFound": "Sayfa Bulunamadı"
+  },
+  "general": {
+    "anErrorOccurred": "Bir hata oluştu",
+    "next": "Sonraki",
+    "onEveryPage": "Her sayfada",
+    "prev": "Önceki",
+    "showResults": "sonuç göster"
+  }
 }

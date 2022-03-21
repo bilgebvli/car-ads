@@ -1,8 +1,37 @@
 {
-  "advertDetail": {
-    "continue": "Continue"
+  "adverts": {
+    "detail": {
+      "continue": "Continue",
+      "description": "Description",
+      "name": "Advert Detail",
+      "properties": {
+        "color": "Color",
+        "fuel": "Fuel Type",
+        "gear": "Gear Type",
+        "km": "Kilometer",
+        "year": "Year"
+      },
+      "sellerContactInformation": "Seller Contact Information",
+      "userInfo": {
+        "nameSurname": "Name Surname",
+        "phone": "Phone"
+      }
+    },
+    "name": "Adverts",
+    "sortItems": {
+      "date": "Date",
+      "price": "Price",
+      "year": "Year"
+    }
   },
   "errors": {
     "pageNotFound": "Page Not Found"
+  },
+  "general": {
+    "anErrorOccurred": "An error occurred",
+    "next": "Next",
+    "onEveryPage": "On every page",
+    "prev": "Prev",
+    "showResults": "show results"
   }
 }
