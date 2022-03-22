@@ -10,7 +10,7 @@ const IMAGE_AVAILABLE_SIZES = {
 };
 
 const IMAGE_DEFAULT_THUMBNAIL_SIZE = '580x435';
-const IMAGE_DEFAULT_BIG_SIZE = '800x600';
+const IMAGE_DEFAULT_BIG_SIZE = '1920x1080';
 
 /**
  * Check size is available
