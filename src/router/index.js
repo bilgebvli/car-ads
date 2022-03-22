@@ -1,30 +1,21 @@
-import Vue from "vue";
-import VueRouter from "vue-router";
-import HomeView from "../views/HomeView.vue";
+import Vue from 'vue';
+import i18n from '@/locales';
+import VueRouter from 'vue-router';
+import routes from './routes';
 
 Vue.use(VueRouter);
 
-const routes = [
-  {
-    path: "/",
-    name: "home",
-    component: HomeView,
-  },
-  {
-    path: "/about",
-    name: "about",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
-  },
-];
-
 const router = new VueRouter({
-  mode: "history",
+  mode: 'history',
   base: process.env.BASE_URL,
   routes,
 });
 
+//Set Page Title
+router.afterEach((to) => {
+  setTimeout(() => {
+    const { pageTitle } = to.meta;
+    document.title = `${i18n.t(pageTitle)} | ${process.env.VUE_APP_TITLE}`;
+  }, 250);
+});
 export default router;

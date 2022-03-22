@@ -1,0 +1,15 @@
+.car-ad-slider {
+  .hooper-pagination-thumb {
+    width: 90%;
+    margin-left: 31px;
+    .hooper-prev {
+      left: -44px;
+    }
+    .hooper-next {
+      right: -50px;
+    }
+    .hooper-indicator.is-active {
+      background-color: red;
+    }
+  }
+}
