@@ -44,7 +44,12 @@ export default {
   },
   methods: {
     changeSorting({ sortValue }) {
-      this.changeQuery({ sort: sortValue });
+      this.changeQuery({
+        sort: sortValue,
+        sortDirection: 0,
+        take: this.take,
+        skip: this.skip,
+      });
     },
     getParams(value) {
       const queryList = [];

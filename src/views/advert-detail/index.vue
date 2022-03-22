@@ -3,11 +3,11 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8">
-          <car-ad-card class="mb-3 p-4 shadow-sm border-0">
+          <car-ad-card class="mb-3 p-sm-4 shadow-sm border-0">
             <h4>{{ advertItem.title }}</h4>
             <car-ad-divider></car-ad-divider>
             <car-ad-slider :photos="advertItem.photos"></car-ad-slider>
-            <car-ad-card class="shadow-sm border-0 my-3 p-4">
+            <car-ad-card class="shadow-sm border-0 my-3 p-sm-4">
               <template slot="header">
                 <h3 class="text-candy-red font-weight-bolder">
                   {{ $t('adverts.detail.description') }}

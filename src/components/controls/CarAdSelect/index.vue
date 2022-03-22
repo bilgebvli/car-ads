@@ -1,6 +1,6 @@
 <template>
-  <select class="form-control" v-model="selectValue" @change="change">
-    <option v-for="(item, index) of items" :key="index">
+  <select class="form-control w-25" v-model="selectValue" @change="change">
+    <option v-for="(item, index) of items" :key="index" :value="item.value">
       {{ item.name }}
     </option>
   </select>
@@ -11,7 +11,7 @@ export default {
   name: 'CarAdSelect',
   props: {
     value: {
-      type: String,
+      type: [String, Number],
     },
     items: {
       type: Array,

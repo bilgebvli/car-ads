@@ -1,6 +1,7 @@
 import Vue from 'vue';
 
 const IMAGE_AVAILABLE_SIZES = {
+  ['120x90']: { w: 120, h: 90 },
   ['160x120']: { w: 160, h: 120 },
   ['240x180']: { w: 240, h: 180 },
   ['580x435']: { w: 580, h: 435 },
@@ -9,6 +10,7 @@ const IMAGE_AVAILABLE_SIZES = {
 };
 
 const IMAGE_DEFAULT_THUMBNAIL_SIZE = '580x435';
+const IMAGE_DEFAULT_BIG_SIZE = '800x600';
 
 /**
  * Check size is available
@@ -50,9 +52,19 @@ const getThumb = ({ media = null }) => {
   return get({ media, size: IMAGE_DEFAULT_THUMBNAIL_SIZE });
 };
 
+/**
+ * Get media big url
+ *
+ * @param {Object} param.media
+ * @returns {String} URL
+ */
+const getBig = ({ media = null }) => {
+  return get({ media, size: IMAGE_DEFAULT_BIG_SIZE });
+};
 const mediaManager = {
   get,
   getThumb,
+  getBig,
 };
 
 Vue.prototype.$mediaManager = mediaManager;

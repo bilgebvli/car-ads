@@ -15,6 +15,9 @@
     padding: 20px;
     border: 1px solid #888;
     width: 50%;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
   }
   &__close {
     color: #aaaaaa;

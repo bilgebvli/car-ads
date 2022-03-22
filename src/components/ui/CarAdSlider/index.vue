@@ -1,6 +1,6 @@
 <template>
   <div :class="componentName">
-    <hooper group="group1" class="hooper">
+    <hooper group="group1" class="hooper h-auto cursor-pointer">
       <slide v-for="(item, index) of photos" :key="index">
         <div @click="clickSlider(item)">
           <car-ad-image
@@ -12,14 +12,15 @@
     </hooper>
     <hooper
       group="group1"
-      :itemsToShow="2"
-      class="hooper-pagination-thumb mt-3"
+      :itemsToShow="4"
+      class="hooper-pagination-thumb mt-3 d-none d-sm-block h-auto"
     >
       <slide v-for="(item, index) of photos" :key="index">
         <div class="mx-1">
           <car-ad-image
-            :src="$mediaManager.getThumb({ media: item })"
+            :src="$mediaManager.get({ media: item, size: '120x90' })"
             width="100%"
+            class="img-thumbnail"
           ></car-ad-image>
         </div>
       </slide>
