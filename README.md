@@ -1,5 +1,32 @@
 # car-ads
 
+## VSCode Configuration
+```
+{
+  "vetur.format.defaultFormatter.html": "prettier",
+  "vetur.format.defaultFormatterOptions": {
+    "prettier": {
+      "singleQuote": true,
+      "trailingComma": "es5"
+    },
+  },
+  "files.eol": "\n",
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "eslint.alwaysShowStatus": true,
+  "eslint.format.enable": true,
+  "eslint.codeActionsOnSave.mode": "problems",
+  "scssFormatter.printWidth": 250,
+  "workbench.colorTheme": "One Dark Pro",
+  "editor.fontSize": 11,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}
+```
+
 ## Project setup
 ```
 npm install
